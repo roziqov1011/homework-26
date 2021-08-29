@@ -3,10 +3,27 @@ body {
 }
 
 
-.container>div {
-    margin-top: 60px;
+.container-fluid>div {
+    overflow-x: hidden;
+    height: 100vh;
     background-color: #041F2B;
-    padding: 20px 20px 20px 0;
+    padding: 0px 20px 20px 0;
+}
+.header{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #1e353b;
+}
+.header__wrap{
+    margin-left: auto;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img{
+    width: 15px;
 }
 
 .menu__list {
@@ -88,7 +105,7 @@ body {
 }
 
 .search__list {
-    height: 500px;
+    height: 80vh;
     overflow: auto;
     list-style-type: none;
     padding: 10px;
@@ -200,7 +217,7 @@ body {
 
 /* ============================ */
 .chat__left__right {
-    height: 500px;
+    height: 72vh;
     overflow: auto;
 }
 
@@ -332,7 +349,7 @@ body {
 /* ========================== */
 .emoji__list-img {
     list-style-type: none;
-    height: 500px;
+    height: 80vh;
     overflow: auto;
     display: flex;
     justify-content: space-around;
