@@ -35,6 +35,36 @@ body {
     align-items: center;
     transform: translateX(20px);
 }
+.menu__list-item:nth-child(1)::after{
+    content: "menu";
+    color: #7CBFD0;
+    display: block;
+    font-size: 14px;
+}
+.menu__list-item:nth-child(2)::after{
+    content: "All chat";
+    color: #7CBFD0;
+    display: block;
+    font-size: 14px;
+}
+.menu__list-item:nth-child(3)::after{
+    content: "Bot";
+    color: #7CBFD0;
+    display: block;
+    font-size: 14px;
+}
+.menu__list-item:nth-child(4)::after{
+    content: "chanel";
+    color: #7CBFD0;
+   display: block;
+    font-size: 14px;
+}
+.menu__list-item:nth-child(5)::after{
+    content: "contanct";
+    color: #7CBFD0;
+    display: block;
+    font-size: 14px;
+}
 
 .menu__list-img {
     cursor: pointer;
