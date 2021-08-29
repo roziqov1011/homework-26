@@ -60,7 +60,7 @@ body {
     font-size: 14px;
 }
 .menu__list-item:nth-child(5)::after{
-    content: "contanct";
+    content: "contact";
     color: #7CBFD0;
     display: block;
     font-size: 14px;
