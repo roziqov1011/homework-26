@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +10,61 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>vazifa-26</title>
 </head>
+
 <body>
+    <i class="bi bi-align-center"></i>
     <div class="container-fluid">
         <div class="row">
             <div class="row header">
-              <div class="header__wrap">
-                  <img class="header__img" src="./img/line.svg" alt="">
-                  <img class="header__img" src="./img/displey.svg" alt="">
-                  <img class="header__img" src="./img/xx.svg" alt="">
-              </div>
+                <div class="header__wrap">
+                    <img class="header__img" src="./img/line.svg" alt="">
+                    <img class="header__img" src="./img/displey.svg" alt="">
+                    <img class="header__img" src="./img/xx.svg" alt="">
+                </div>
             </div>
             <div class="row">
                 <div class="col-1">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <img class="menu__list-img" src="./img/hamburger.svg" alt=""></li>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <img class="menu__list-img" src="./img/hamburger.svg" alt="">
+                            </button>
+
+                            <div class="offcanvas offcanvas-start bg-info text-white" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img class="" src="./img/logo-white.png" alt="" width="60"></h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        Roziqov R <br>
+                                        +998 90 206 06 90
+                                    </div>
+                                    <div class="dropdown w-100 bg-dark">
+                                        <button class="btn d-flex  w-100 mb-1 text-white " type="button">
+                                            <img class="d-flex me-5" src="./img/chat.svg" alt="" width="40">
+                                            chat
+                                        </button>
+                                        <button class="btn d-flex  w-100 mb-1 text-white " type="button">
+                                            <img class="d-flex me-5" src="./img/contact.svg" alt="" width="40">
+                                            Contact
+                                        </button>
+                                        <button class="btn d-flex  w-100 mb-1 text-white " type="button">
+                                            <img class="d-flex me-5" src="./img/folder.svg" alt="" width="40">
+                                            folder
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li class="menu__list-item">
                             <img class="menu__list-img" src="./img/chat.svg" alt=""></li>
                         <li class="menu__list-item">
@@ -48,7 +88,7 @@
                             </div>
                         </li>
                         <li class="search__list-item">
-                           <img class="search__item-img" src="./img/logo-indigo.png " alt="">
+                            <img class="search__item-img" src="./img/logo-indigo.png " alt="">
                             <div class="search__item-inner">
                                 <h4 class="search__item-title">Lorem, ipsum.</h4>
                                 <span class="search__item-span">Salom dunyo</span>
@@ -267,118 +307,236 @@
                     </ul>
                 </div>
                 <div class="col-5">
-                   <div class="col">
-                       <div class="row">
-                           <div class="chat__menu">
-                            <h4 class="chat__title">chanel name</h4>
-                            <ul class="chat__list">
-                                <li class="chat__list-item">
-                                    <img class="chat__item-img" src="./img/search.svg" alt="">
-                                 </li>
-                                <li class="chat__list-item">
-                                    <img class="chat__item-img" src="./img/grid.svg" alt="">
-                                 </li>
-                                <li class="chat__list-item">
-                                    <img class="chat__item-img" src="./img/nuqta.svg" alt="">
-                                 </li>
-                            </ul>
-                           </div>
-                       </div>
-                       <div class="row"></div>
-                       <div class="row">
-                         <div class="chat__left__right">
-                            <div class="chat__left">
-                                <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                                <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                    <div class="col">
+                        <div class="row">
+                            <div class="chat__menu">
+                                <h4 class="chat__title">
+                                   
+                                    <div class="dropdown ">
+                                        <button class="btn text-white fs-4 " type="button" id="dropdownMenu2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            chat name
+                                        </button>
+                                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item text-info" type="button">contact-1</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-2</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-3</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-4</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-5</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-6</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-7</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-8</button>
+                                            </li>
+                                            <li><button class="dropdown-item text-info" type="button">contact-9</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </h4>
+                                <ul class="chat__list">
+                                    <li class="chat__list-item">
+                                        <img class="chat__item-img" src="./img/search.svg" alt="">
+                                    </li>
+                                    <li class="chat__list-item">
+                                        <img class="chat__item-img" src="./img/grid.svg" alt="">
+                                    </li>
+                                    <li class="chat__list-item">
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn " data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img class="chat__item-img" src="./img/nuqta.svg" alt="">
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog ">
+                                                <div class="modal-content bg-info text-white">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Sozlash</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="me-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                              </svg>
+                                                            qidiruv
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="me-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                                              </svg>
+                                                            tahrirlash
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="me-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                                                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                                              </svg>
+                                                            chqish
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="me-5"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-slash-circle" viewBox="0 0 16 16">
+                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                                <path d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z"/>
+                                                              </svg>
+                                                            sukut qilish
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">orqaga</button>
+                                                        <button type="button" class="btn btn-primary">saqlash</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="chat__right">
-                             <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                             <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                         </div>
-                         <div class="chat__left">
-                             <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                             <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                         </div>
-                         <div class="chat__right">
-                             <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                             <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                         </div>
-                         <div class="chat__left">
-                             <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                             <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                         </div>
-                         <div class="chat__right">
-                             <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                             <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                         </div>
-                         <div class="chat__left">
-                            <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                            <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
                         </div>
-                        <div class="chat__right">
-                            <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                            <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                        <div class="row"></div>
+                        <div class="row">
+                            <div class="chat__left__right">
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                                <div class="chat__left">
+                                    <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
+                                    <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                </div>
+                                <div class="chat__right">
+                                    <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit
+                                        enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                                    <img class="chat__right-img" src="./img/logo-white.png" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="chat__left">
-                            <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                            <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
+                        <div class="row">
+                            <div class="chat__send">
+                                <div class="chat__send-left">
+                                    <img class="chat__send-left-img" src="./img/skripka.svg" alt="">
+                                    <form action="3">
+                                        <input class="chat__send-left-input" type="text"
+                                            placeholder="Write a messege...">
+                                    </form>
+                                </div>
+                                <div class="chat__send-right">
+                                    <img class="chat__send-right-img" src="./img/emoji.svg" alt="">
+                                    <img class="chat__send-right-img" src="./img/microphone.svg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="chat__right">
-                            <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                            <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                        </div>
-                        <div class="chat__left">
-                            <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                            <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                        </div>
-                        <div class="chat__right">
-                            <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                            <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                        </div>
-                        <div class="chat__left">
-                            <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                            <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                        </div>
-                        <div class="chat__right">
-                            <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                            <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                        </div>
-                        <div class="chat__left">
-                            <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                            <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                        </div>
-                        <div class="chat__right">
-                            <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                            <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                        </div>
-                        <div class="chat__left">
-                            <img class="chat__left-img" src="./img/logo-indigo.png" alt="">
-                            <p class="chat__left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                        </div>
-                        <div class="chat__right">
-                            <p class="chat__right-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a ut neque laborum pariatur autem quas eum placeat facere dignissimos sit enim sunt asperiores quae minima, at natus veniam saepe!</p>
-                            <img class="chat__right-img" src="./img/logo-white.png" alt="">
-                        </div> 
-                         </div>
-                       </div>
-                       <div class="row">
-                           <div class="chat__send">
-                               <div class="chat__send-left">
-                                   <img class="chat__send-left-img" src="./img/skripka.svg" alt="">
-                                   <form action="3">
-                                       <input class="chat__send-left-input" type="text" placeholder="Write a messege...">
-                                   </form>
-                               </div>
-                               <div class="chat__send-right">
-                                   <img class="chat__send-right-img" src="./img/emoji.svg" alt="">
-                                   <img class="chat__send-right-img" src="./img/microphone.svg" alt="">
-                               </div>
-                           </div>
-                       </div>
-                   </div>
+                    </div>
                 </div>
                 <div class="col-3">
-                    <div class="row"> 
+                    <div class="row">
                         <ul class="emoji__list-name">
                             <li>EMOJI</li>
                             <li>GIFS</li>
@@ -560,6 +718,14 @@
     </div>
 
 
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js">
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
 </body>
+
 </html>
